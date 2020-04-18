@@ -1,0 +1,22 @@
+<div class="userinfo">
+    <table class="userinfo_table">
+        <thead>
+            <tr>
+                <th *ngFor="let header of tableHeaders"
+                    (click)="sort(header)">
+                    {{header | titlecase}}
+                    <span *ngIf="sortKey === header">
+                        <fa-icon [icon]="sortIcon"></fa-icon>
+                    </span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users | sort: sortOrder: sortKey">
+                <td *ngFor="let header of tableHeaders">
+                    {{user[header]}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

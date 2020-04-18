@@ -1,0 +1,14 @@
+$base-selector: ".app";
+
+#{$base-selector} {
+    &_title {
+        text-align: center;
+    }
+
+    &_note {
+        padding-top: 40px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+}

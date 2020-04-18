@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tableSorting';
+  title = 'Employee Details';
+  note: string = 'Note: Click on any table header to sort the data.'
 }

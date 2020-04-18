@@ -1,0 +1,30 @@
+$base-selector: ".userinfo";
+
+#{$base-selector} {
+    &_table {
+        width: 100%;
+        padding: 20px;
+
+        thead {
+            background: grey;
+            color: #ffffff;
+            th {
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+
+        tbody {
+            tr {
+                background: #e5e5e5;
+                td {
+                    padding: 10px;
+                }
+
+                &:nth-child(2n) {
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+}
